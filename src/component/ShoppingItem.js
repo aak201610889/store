@@ -57,10 +57,11 @@ function ShoppingItem({ cartItems, removeFromCart, }) {
           </button>
         </div>
       )}
-      
+
       {cartItems.length !== 0 && showProceed && (
         <Fade right cascade>
           <form className="checkout__shopping" >
+            {/*  TODO: ADD BACKEND  */}
             <p>Email:</p>
             <input type="email" onChange={(e)=>{setemail(e.target.value)}} />
             <p>Name:</p>

@@ -15,6 +15,7 @@ function CartItem({ product, Sort, Size, addToCart }) {
             ? 1
             : -1
       )
+        // FIXME: this is a bug, the filter is not working
         
         .filter((item) => item.availableSizes.indexOf(Size) > 0)
         .map((product) => (
