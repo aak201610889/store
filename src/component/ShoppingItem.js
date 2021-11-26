@@ -68,7 +68,7 @@ function ShoppingItem({ cartItems, removeFromCart, }) {
             <input type="text"  onChange={(e)=>{setname(e.target.value)}}/>
             <p>Address:</p>
             <input type="text" onChange={(e) => { setaddress(e.target.value) }} />
-            {console.log('name is'+name)}
+            {console.log('name is'+name)} 
             <br />
             <button>checkout</button>
           </form>
