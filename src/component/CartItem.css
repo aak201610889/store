@@ -1,0 +1,44 @@
+.cartitem{
+  display: flex;
+  flex-wrap: wrap;
+  
+  align-items: center;
+ 
+}
+.cartitem>div{
+background: rgb(2,0,36);
+background: linear-gradient(236deg, rgba(2,0,36,1) 11%, rgba(62,3,20,1) 39%, rgba(68,6,13,1) 67%, rgba(99,7,13,1) 86%, rgba(189,9,9,1) 100%, rgba(189,9,9,1) 100%);
+  
+  padding: 5px;
+  border-radius: 7px;
+  margin: 2px;
+  margin-top: 10px;
+}
+.additem__btn{
+  width: 90%;
+  margin-left: 5%;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+
+}
+.additem__btn:hover{
+  background-color: #ffffff;
+  color: rgb(129, 32, 32);
+  font-weight: bold;
+  text-shadow:1px 1px tomato;
+  border: 2px solid rgb(90, 23, 23);
+  box-shadow: 2px 2px 2px rgb(102, 29, 29);
+  cursor: pointer;
+}
+.cartitem>div>.sub__title{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.sub__title>p{
+margin-right: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 1.2em;
+}
