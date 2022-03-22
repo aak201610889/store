@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import "./App.css";
+import {Routes, Route} from 'react-router-dom';
+import Temp from "./components/Temp";
+import Todo from "./components/Todo";
+import ResponsiveAppBar from "./components/ResponsiveAppBar";
 
 function App() {
+  const [theme, settheme] = useState(false);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="todo-app">
+      {/* //using redux here to store the theme best  */}
+      <ResponsiveAppBar theme={theme} />
+      <Routes>
+        <Route path="/todo" element={<Todo theme={theme} />} />
+        <Route path="/weather" element={<Temp theme={theme} />} />
+      </Routes>
     </div>
   );
 }
